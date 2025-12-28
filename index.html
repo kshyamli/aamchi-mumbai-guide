@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>The Aamchi Mumbai Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="chat-header">
+            <div class="header-content">
+                <div class="guide-avatar">
+                    <span class="avatar-emoji">🗺️</span>
+                </div>
+                <div class="header-info">
+                    <h1 class="guide-name">Aamchi Mumbai Guide</h1>
+                    <p class="guide-status">
+                        <span class="status-dot"></span>
+                        Your Bambaiya buddy • Online
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Window -->
+        <main class="chat-window" id="chatWindow">
+            <div class="welcome-section" id="welcomeSection">
+                <div class="welcome-avatar">
+                    <span>👋</span>
+                </div>
+                <div class="welcome-message">
+                    <h2>Namaskar, Bhidu!</h2>
+                    <p>Welcome to Aamchi Mumbai! I'm your street-smart local guide ready to help with:</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">🍛</span>
+                            <span>Food & Restaurants</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📍</span>
+                            <span>Places & Areas</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🏥</span>
+                            <span>Hospitals & Emergency</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">☕</span>
+                            <span>Cafes & Workspaces</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🏨</span>
+                            <span>Hotels & Stays</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🗣️</span>
+                            <span>Marathi Translation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Suggestions -->
+                <div class="suggestions-section">
+                    <h3>Try these, dada:</h3>
+                    <div class="suggestion-chips">
+                        <button class="suggestion-chip" data-query="I'm at IIT Bombay and hungry">🍽️ IIT + Hungry</button>
+                        <button class="suggestion-chip" data-query="I'm tired and have only 2 days">😴 Tired + 2 Days</button>
+                        <button class="suggestion-chip" data-query="translate hello">🗣️ Translate Hello</button>
+                        <button class="suggestion-chip" data-query="emergency hospital">🏥 Emergency</button>
+                        <button class="suggestion-chip" data-query="best vada pav">🥪 Vada Pav</button>
+                        <button class="suggestion-chip" data-query="cafe near Colaba">☕ Colaba Cafe</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Messages Container -->
+            <div class="messages-container" id="messagesContainer">
+                <!-- Messages will be dynamically added here -->
+            </div>
+        </main>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+            <div class="typing-avatar">👋</div>
+            <div class="typing-content">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <footer class="chat-input-area">
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        placeholder="Ask me anything about Mumbai, bhidu..."
+                        autocomplete="off"
+                        maxlength="500"
+                    >
+                    <button class="send-button" id="sendButton" disabled>
+                        <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="powered-by">AI for Bharat Week 5 Challenge</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
